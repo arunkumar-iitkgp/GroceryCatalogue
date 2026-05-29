@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
+import { Text, View, Image, StyleSheet,TouchableOpacity, ScrollView } from 'react-native';
 import { styles } from '../navigation/TabNavigator'; // Directly import styles
 
 export default function BakeryItemsScreen() {
