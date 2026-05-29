@@ -4,6 +4,7 @@
     import FruitsScreen from '../screens/FruitsScreen';
     import VegetablesScreen from '../screens/VegetablesScreen';
     import DairyScreen from '../screens/DairyScreen';
+    import BakeryItemsScreen from '../screens/BakeryItemsScreen';
     import { SafeAreaProvider } from 'react-native-safe-area-context';
     import { SafeAreaView, StyleSheet, Text } from 'react-native';
 
@@ -33,6 +34,13 @@
                 <Tab.Screen
                   name="Dairy"
                   component={DairyScreen}
+                  options={{
+                    headerShown: false,
+                  }}
+                />
+                <Tab.Screen
+                  name="Bakery"
+                  component={BakeryItemsScreen}
                   options={{
                     headerShown: false,
                   }}
