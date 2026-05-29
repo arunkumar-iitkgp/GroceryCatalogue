@@ -4,8 +4,9 @@
     import FruitsScreen from '../screens/FruitsScreen';
     import VegetablesScreen from '../screens/VegetablesScreen';
     import DairyScreen from '../screens/DairyScreen';
-    import { SafeAreaProvider } from 'react-native-safe-area-context';
-    import { SafeAreaView, StyleSheet, Text } from 'react-native';
+    import BakeryItemsScreen from '../screens/BakeryItemsScreen';
+    import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+    import { StyleSheet, Text } from 'react-native';
 
     const Tab = createBottomTabNavigator();
 
@@ -33,6 +34,13 @@
                 <Tab.Screen
                   name="Dairy"
                   component={DairyScreen}
+                  options={{
+                    headerShown: false,
+                  }}
+                />
+                <Tab.Screen
+                  name="Bakery"
+                  component={BakeryItemsScreen}
                   options={{
                     headerShown: false,
                   }}

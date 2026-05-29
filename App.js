@@ -1,5 +1,10 @@
 import TabNavigator from './navigation/TabNavigator';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
-  return <TabNavigator />;
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <TabNavigator />
+    </GestureHandlerRootView>
+  );
 }

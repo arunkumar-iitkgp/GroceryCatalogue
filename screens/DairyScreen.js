@@ -5,7 +5,7 @@ import { Text, View, Image, StyleSheet, TouchableOpacity, ScrollView } from 'rea
 import { styles } from '../navigation/TabNavigator';
 
 export default function DairyScreen() {
-    const items = [
+    const Dairy = [
       { name: 'Milk', price: '$2.50', image: 'https://images.unsplash.com/photo-1523473827533-2a64d0d36748?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { name: 'Cheese', price: '$3.75', image: 'https://images.unsplash.com/photo-1717957352201-1d3ee984b6ed?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
       { name: 'Yogurt', price: '$1.20', image: 'https://images.unsplash.com/photo-1572041002237-762bdc102cf6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
@@ -19,7 +19,7 @@ export default function DairyScreen() {
     return (
       <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Fresh dairy products for you from folders</Text>
-            {items.map((item, index) => (
+            {Dairy.map((item, index) => (
               <View key={index} style={styles.itemContainer}>
                 <Image source={{uri:item.image}} style={styles.image} />
                 <View style={styles.details}>
